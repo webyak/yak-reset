@@ -1,0 +1,29 @@
+{
+  "name": "yak-reset",
+  "version": "1.0.0",
+  "description": "An opinionated style reset to be used with styled-components",
+  "main": "src/index.js",
+  "repository": "https://github.com/webyak/yak-reset.git",
+  "author": "Yannik Schweinzer <hello@yannik.io>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel -d dist src",
+    "prepublish": "npm run build",
+    "postversion": "git push origin master --tags && npm publish"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.25.0",
+    "babel-eslint": "^7.2.3",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-es2015-template-literals": "^6.22.0",
+    "babel-preset-env": "^1.6.0",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb-base": "^11.3.1",
+    "eslint-plugin-import": "^2.7.0",
+    "styled-components": "^2.1.1"
+  },
+  "peerDependencies": {
+    "styled-components": "^2.1.1"
+  }
+}
