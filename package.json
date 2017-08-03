@@ -1,13 +1,13 @@
 {
   "name": "yak-reset",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "An opinionated style reset to be used with styled-components",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "repository": "https://github.com/webyak/yak-reset.git",
   "author": "Yannik Schweinzer <hello@yannik.io>",
   "license": "MIT",
   "scripts": {
-    "build": "babel -d dist src",
+    "build": "babel -d lib src",
     "prepublish": "npm run build",
     "postversion": "git push origin master --tags && npm publish"
   },
